@@ -1,0 +1,5 @@
+pyln-client
+pyln-testing
+pytest
+pytest-timeout
+pytest-xdist
