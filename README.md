@@ -33,3 +33,49 @@ started right away:
    develop in isolation.
  - A `Makefile` that provides shortcuts to run tests and build artifacts.
 
+You can get started with this template by checking it out, and start hacking:
+
+```bash
+$ git clone https://github.com/lightningd/template.git my-awesome-project
+$ cd my-awesome-project
+```
+
+Alternatively you can also download a snapshot and start with that:
+
+```bash
+$ wget https://github.com/lightningd/template/archive/master.zip -O my-awesome-project.zip
+$ unzip my-awesome-project.zip
+$ cd my-awesome-project
+```
+
+The template comes with some canned tests to illustrate how you can create a
+network, perform some actions on it, test some things, and then tear down the
+network again after the test ran. These tests can be run either directly, or
+with the provided docker image, if you don't want to install the
+dependencies. The following builds the docker image:
+
+```bash
+make docker-image
+```
+
+And the following runs the tests in a docker container:
+
+```bash
+make docker-test
+```
+
+## Where to go next?
+
+Once you have familiarized yourself with how your tests can be run it's time
+to dig deeper. The followin resources should help you on your journey:
+
+ - The c-lightning [Plugin API docs][plugin-docs] describe the communication
+   between c-lightning and your plugin.
+ - The [pyln-client docs][pyln-client-docs] describe the JSON-RPC API client
+   (`LightningRpc`) and the `Plugin` API used to talk to c-lightning over the
+   JSON-RPC or to implement a plugin. 🚧 These docs are still under
+   construction 🚧
+ 
+ 
+[plugin-docs]: https://lightning.readthedocs.io/PLUGINS.html
+[pyln-client-docs]: https://pyln-client.readthedocs.io/en/pyln/api.html
