@@ -67,7 +67,7 @@ make docker-test
 ## Where to go next?
 
 Once you have familiarized yourself with how your tests can be run it's time
-to dig deeper. The followin resources should help you on your journey:
+to dig deeper. The following resources should help you on your journey:
 
  - The c-lightning [Plugin API docs][plugin-docs] describe the communication
    between c-lightning and your plugin.
