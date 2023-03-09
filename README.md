@@ -1,4 +1,4 @@
-# c-lightning Project Template
+# c-lightning Project Template (Updated for Bitcoin 24 and Default CI)
 
 Getting started with a new project can be a daunting task, especially on a
 complex project like a Lightning node. This template tries to get you going as
@@ -67,7 +67,7 @@ make docker-test
 ## Where to go next?
 
 Once you have familiarized yourself with how your tests can be run it's time
-to dig deeper. The followin resources should help you on your journey:
+to dig deeper. The following resources should help you on your journey:
 
  - The c-lightning [Plugin API docs][plugin-docs] describe the communication
    between c-lightning and your plugin.
